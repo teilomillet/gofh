@@ -1,3 +1,3 @@
-module github.com/teilomillet/gofasthtml
+module github.com/teilomillet/gofh
 
 go 1.22.5
