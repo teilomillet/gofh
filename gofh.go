@@ -28,6 +28,11 @@ func New(options ...Option) *App {
 	return app
 }
 
+// Text creates a text node Element
+func Text(content string) Element {
+	return core.El("", content)
+}
+
 // Get adds a new GET route to the application
 func (a *App) Get(path string) *RouteBuilder {
 	return &RouteBuilder{app: a, method: "GET", path: path}
@@ -69,6 +74,6 @@ var (
 	H3     = core.H3
 	Ul     = core.Ul
 	Li     = core.Li
+	El     = core.El
 	// Add other elements as needed
 )
-

@@ -54,6 +54,9 @@ func (s *Server) renderWithHTMX(w http.ResponseWriter, element core.Element) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoFH App</title>
     <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.1.6/dist/full.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     %s
